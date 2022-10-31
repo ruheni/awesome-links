@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "vercel-build": "prisma generate --data-proxy && prisma migrate deploy && next build",
-    "prisma:generate": "prisma generate"
+    "vercel-build": "prisma generate --data-proxy && next build",
+    "prisma:generate": "prisma generate --data-proxy"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
